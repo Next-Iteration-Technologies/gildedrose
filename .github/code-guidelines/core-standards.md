@@ -62,7 +62,7 @@ Ensure code is *extremely readable*, composed of *very small and focused* method
 - Incomplete Library Class
 - Middle Man (excessive delegation without adding value)
 - Inappropriate Intimacy
-- Message Chains - (e.g. `a.getB().getC().getD()` in backend, `props.user.address.street.name` in frontend)
+- Message Chains - (e.g. `a.B.C.D` in backend, `props.user.address.street.name` in frontend)
 - Magic numbers (also magic literals): Replace magic numbers with named constants
 
 ### Guidelines for Comments
@@ -87,9 +87,9 @@ Ensure code is *extremely readable*, composed of *very small and focused* method
 - Stick to fewer assertions per test. **Maximum**: 3
 - Adhere to _Arrange-Act-Assert_ format
 - **Avoid duplicated code** - extract commonly used data at class level
-- Avoid `lenient()` unless retrofitting legacy tests; prefer explicit mocks.
-- For new APIs, add integration test against controller + service + repository slice.
-- Remove tests that only verify trivial getters or Spring annotations.
+- Avoid loose/permissive mock setups unless retrofitting legacy tests; prefer explicit mocks.
+- For new APIs, add integration tests against controller + service + repository slice.
+- Remove tests that only verify trivial getters or framework-generated behaviour.
 - Validate mandatory request fields added during changes.
 - At least one negative test per API.
 
@@ -145,4 +145,4 @@ Ensure code is *extremely readable*, composed of *very small and focused* method
 ### Technology-Specific Guidelines (Mandatory)
 In addition to these core standards, you MUST follow the relevant technology-specific guideline(s) depending on the codebase you are working in:
 
-- Java / Spring Boot: [java-springboot.md](java-springboot.md)
+- C-Sharp: [csharp.md](csharp.md)
