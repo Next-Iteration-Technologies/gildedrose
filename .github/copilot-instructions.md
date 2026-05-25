@@ -6,7 +6,7 @@ This repository contains refactoring exercises. This file provides quick navigat
 
 ### **Coding Standards & Guidelines**
 
-#### [**Core Standards**](../code-guidelines/core-standards.md)
+#### [**Core Standards**](code-guidelines/core-standards.md)
 **Purpose**: Universal coding principles applicable to all languages and projects  
 **What it covers**:
 - General principles (KISS, YAGNI, DRY, Boy Scout Rule)
@@ -15,7 +15,7 @@ This repository contains refactoring exercises. This file provides quick navigat
 - Method/class size guidelines
 - Naming conventions and readability requirements
 
-#### [**C# / .NET Guidelines**](../code-guidelines/csharp.md)
+#### [**C# / .NET Guidelines**](code-guidelines/csharp.md)
 **Purpose**: Language-specific conventions for this C# project  
 **What it covers**:
 - C# code style, naming conventions, and formatting
@@ -29,7 +29,7 @@ This repository contains refactoring exercises. This file provides quick navigat
 
 ### **Skills**
 
-#### [**Review & Refactor**](../skills/review-refactor/SKILL.md)
+#### [**Review & Refactor**](skills/review-refactor/SKILL.md)
 **Purpose**: Interactive, incremental code review workflow  
 **What it covers**:
 - Commit-based code review with issue prioritization
@@ -38,7 +38,7 @@ This repository contains refactoring exercises. This file provides quick navigat
 
 ## Recommended Workflow
 
-1. **Before coding**: Reference [core-standards.md](../code-guidelines/core-standards.md) and [csharp.md](../code-guidelines/csharp.md) for principles
+1. **Before coding**: Reference [core-standards.md](code-guidelines/core-standards.md) and [csharp.md](code-guidelines/csharp.md) for principles
 2. **While refactoring**: Apply small, incremental changes following SOLID and code smell guidelines
 3. **Always**: Run tests to verify behavior preservation
 
