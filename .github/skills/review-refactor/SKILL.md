@@ -26,7 +26,7 @@ description: >-
 
 ## References (Required)
 
-- Technical context: [technical-context.md](../../artifacts/technical-context.md)
+- Technical context: [technical-context.md](../../../artifacts/technical-context.md)
 - Clean coding guidelines: `core-standards.md` (always applied) + any language-specific files discovered in the `code-guidelines` directory
 
 ---
@@ -114,7 +114,7 @@ Perform complete, safe refactoring:
 #### **4. Backlog (Later)**
 
 - Add a minimal entry to:
-  - [`refactor_backlog.md`](../../artifacts/review/refactor_backlog.md)
+  - [`refactor_backlog.md`](../../../artifacts/review/refactor_backlog.md)
 - Include: file, line range, summary, priority.
 
 ---
