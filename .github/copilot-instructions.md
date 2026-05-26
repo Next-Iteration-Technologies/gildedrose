@@ -1,8 +1,13 @@
 # Copilot Instructions - Refactoring Project
 
-This repository contains refactoring exercises. This file provides quick navigation to all AI agent guidance documents.
+This repository contains refactoring exercises in Java. This file provides quick navigation to all AI agent guidance documents.
 
 ## Documentation Structure
+
+### **Start Here: Project Context**
+→ [**Tech Onboarding**](context/tech-onboarding.md)  
+**Purpose**: Complete project overview, build instructions, and refactoring exercise specifics  
+**When to use**: First time working in this codebase; understanding the project architecture, test requirements, and legacy code constraints
 
 ### **Coding Standards & Guidelines**
 
@@ -15,17 +20,26 @@ This repository contains refactoring exercises. This file provides quick navigat
 - Method/class size guidelines
 - Naming conventions and readability requirements
 
-#### [**C# / .NET Guidelines**](code-guidelines/csharp.md)
-**Purpose**: Language-specific conventions for this C# project  
-**What it covers**:
-- C# code style, naming conventions, and formatting
-- ASP.NET Core and Entity Framework Core best practices
-- Error handling, testing, and security patterns
-
-**When to consider:**
+**When to consider**: 
 - Before writing any new code or refactoring
 - When reviewing code quality
 - Resolving design decisions (should I extract this method? is this class doing too much?)
+
+#### [**Java Spring Boot Standards**](code-guidelines/java-springboot.md)
+**Purpose**: Java-specific and Spring Boot best practices  
+**What it covers**:
+- Java 17+ conventions
+- Package-by-feature organization
+- Spring Boot layer patterns (Controller → Service → Repository)
+- Exception handling strategies
+- Testing patterns (unit, integration, mocking)
+- Database and API conventions
+
+**When to consider**:
+- Building Spring Boot applications (Note: current exercises use plain Java)
+- Structuring multi-layer applications
+- Writing REST controllers or service layers
+- Future reference if exercises evolve to Spring Boot
 
 ### **Skills**
 
@@ -38,14 +52,16 @@ This repository contains refactoring exercises. This file provides quick navigat
 
 ## Recommended Workflow
 
-1. **Before coding**: Reference [core-standards.md](code-guidelines/core-standards.md) and [csharp.md](code-guidelines/csharp.md) for principles
-2. **While refactoring**: Apply small, incremental changes following SOLID and code smell guidelines
-3. **Always**: Run tests to verify behavior preservation
+1. **First visit**: Read [tech-onboarding.md](context/tech-onboarding.md) for project context
+2. **Before coding**: Reference [core-standards.md](code-guidelines/core-standards.md) and [java-springboot.md](code-guidelines/java-springboot.md) for principles
+3. **While refactoring**: Apply small, incremental changes following SOLID and code smell guidelines
+4. **Always**: Run `mvn test` to verify behavior preservation
 
 ## Project-Specific Reminders
 
 - This is a **refactoring workshop**, not feature development
 - Preserve exact test outputs (string formatting matters!)
+- Java 11, Maven, JUnit 4.12+
 - Incremental changes > big rewrites
 
 ## Additional Resources

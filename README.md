@@ -1,23 +1,32 @@
-# Gilded Rose Kata (C# / .NET 8)
+# GildedRose Refactoring Exercise
 
-This repository contains the C# version of the Gilded Rose kata.
+This source code follows Martin Fowler's book "Refactoring, Improving the Design of Existing Code".
 
-The kata was popularized by Martin Fowler and is widely used for practicing code changes in a small inventory domain.
+When you find you have to add a feature to a program, and the program's code is not
+structured in a convenient way to add the feature, first refactor the program to make it
+easy to add the feature, then add the feature.
 
-## Requirements
+Whenever you do refactoring, the first step is always the same.
+You need to build a solid set of tests for that section of code. The tests are essential because even
+though you follow refactorings structured to avoid most of the opportunities for introducing bugs,
+you are still human and still make mistakes. Thus, you need solid tests that act as safety net when we refactor the code.
 
-- .NET 8 SDK
+## Problem Statement
+- This codebase includes a refactoring exercise under `gildedrose` package.
+- Read the problem statement here: [GildedRoseRequirements.md](GildedRoseRequirements.md) thoroughly before attempting the exercise.
 
-## Setup
+This refactoring exercise, when performed systematically provides insight into understanding different code smells, the technique to refactor and the design principles to consider while refactoring. This is an exercise to demonstrate how clean code can be evolved from legacy codebase.
 
 ## Build
 
-```bash
-dotnet build
-```
+All you need to build this project is Java 11 or later, Maven 3.0 or later.
 
-## Test
+## Testing
 
-```bash
-dotnet test
-```
+Unit tests can be run using maven[1]:
+
+    $ mvn test
+
+[1]: http://maven.apache.org/
+
+Tests are located in the test directory and run using Junit.
